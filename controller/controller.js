@@ -69,6 +69,7 @@ const createUserData = async (request,response) =>{
     try{
         const data = fs.readFileSync('./users/users.json')
         const JSONdata = JSON.parse(data.toString())
+        console.log(JSONdata)
         JSONdata.push({
             first_name,
             last_name,
